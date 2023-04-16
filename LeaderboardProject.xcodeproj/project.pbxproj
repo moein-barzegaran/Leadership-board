@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		50D4889C29EB65E700146C3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D4889B29EB65E700146C3D /* AppDelegate.swift */; };
 		50D4889E29EB65E700146C3D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D4889D29EB65E700146C3D /* SceneDelegate.swift */; };
-		50D488A029EB65E700146C3D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D4889F29EB65E700146C3D /* ViewController.swift */; };
+		50D488A029EB65E700146C3D /* LeadershipBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D4889F29EB65E700146C3D /* LeadershipBoardViewController.swift */; };
 		50D488A529EB65E800146C3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50D488A429EB65E800146C3D /* Assets.xcassets */; };
 		50D488A829EB65E800146C3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50D488A629EB65E800146C3D /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -18,7 +18,7 @@
 		50D4889829EB65E700146C3D /* LeaderboardProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeaderboardProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50D4889B29EB65E700146C3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50D4889D29EB65E700146C3D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		50D4889F29EB65E700146C3D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		50D4889F29EB65E700146C3D /* LeadershipBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadershipBoardViewController.swift; sourceTree = "<group>"; };
 		50D488A429EB65E800146C3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50D488A729EB65E800146C3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50D488A929EB65E800146C3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,14 +54,46 @@
 		50D4889A29EB65E700146C3D /* LeaderboardProject */ = {
 			isa = PBXGroup;
 			children = (
+				50D488AF29EB792300146C3D /* Application */,
+				50D488B129EB794500146C3D /* Scenes */,
+				50D488B029EB793500146C3D /* Resources */,
+			);
+			path = LeaderboardProject;
+			sourceTree = "<group>";
+		};
+		50D488AF29EB792300146C3D /* Application */ = {
+			isa = PBXGroup;
+			children = (
 				50D4889B29EB65E700146C3D /* AppDelegate.swift */,
 				50D4889D29EB65E700146C3D /* SceneDelegate.swift */,
-				50D4889F29EB65E700146C3D /* ViewController.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		50D488B029EB793500146C3D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				50D488A429EB65E800146C3D /* Assets.xcassets */,
 				50D488A629EB65E800146C3D /* LaunchScreen.storyboard */,
 				50D488A929EB65E800146C3D /* Info.plist */,
 			);
-			path = LeaderboardProject;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		50D488B129EB794500146C3D /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				50D488B229EB796D00146C3D /* LeadershipBoardScreen */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		50D488B229EB796D00146C3D /* LeadershipBoardScreen */ = {
+			isa = PBXGroup;
+			children = (
+				50D4889F29EB65E700146C3D /* LeadershipBoardViewController.swift */,
+			);
+			path = LeadershipBoardScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,7 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50D488A029EB65E700146C3D /* ViewController.swift in Sources */,
+				50D488A029EB65E700146C3D /* LeadershipBoardViewController.swift in Sources */,
 				50D4889C29EB65E700146C3D /* AppDelegate.swift in Sources */,
 				50D4889E29EB65E700146C3D /* SceneDelegate.swift in Sources */,
 			);
@@ -277,7 +309,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RAMX6HK422;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LeaderboardProject/Info.plist;
+				INFOPLIST_FILE = LeaderboardProject/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -304,7 +336,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RAMX6HK422;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LeaderboardProject/Info.plist;
+				INFOPLIST_FILE = LeaderboardProject/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
