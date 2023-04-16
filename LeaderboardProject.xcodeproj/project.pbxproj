@@ -14,6 +14,7 @@
 		50D488A829EB65E800146C3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50D488A629EB65E800146C3D /* LaunchScreen.storyboard */; };
 		50D488B529EB7CEC00146C3D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50D488B429EB7CEC00146C3D /* Colors.xcassets */; };
 		50D488BB29EB7E2D00146C3D /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D488BA29EB7E2D00146C3D /* Color+Extensions.swift */; };
+		50D488BE29EB811200146C3D /* LeadershipBoardNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D488BD29EB811200146C3D /* LeadershipBoardNavBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		50D488A929EB65E800146C3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50D488B429EB7CEC00146C3D /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		50D488BA29EB7E2D00146C3D /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		50D488BD29EB811200146C3D /* LeadershipBoardNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadershipBoardNavBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		50D488B229EB796D00146C3D /* LeadershipBoardScreen */ = {
 			isa = PBXGroup;
 			children = (
+				50D488BC29EB80FB00146C3D /* Subviews */,
 				50D4889F29EB65E700146C3D /* LeadershipBoardViewController.swift */,
 			);
 			path = LeadershipBoardScreen;
@@ -124,6 +127,14 @@
 				50D488BA29EB7E2D00146C3D /* Color+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		50D488BC29EB80FB00146C3D /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				50D488BD29EB811200146C3D /* LeadershipBoardNavBar.swift */,
+			);
+			path = Subviews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +211,7 @@
 				50D488A029EB65E700146C3D /* LeadershipBoardViewController.swift in Sources */,
 				50D4889C29EB65E700146C3D /* AppDelegate.swift in Sources */,
 				50D4889E29EB65E700146C3D /* SceneDelegate.swift in Sources */,
+				50D488BE29EB811200146C3D /* LeadershipBoardNavBar.swift in Sources */,
 				50D488BB29EB7E2D00146C3D /* Color+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
