@@ -44,12 +44,16 @@ private extension LeadershipBoardNavBar {
         NSLayoutConstraint.activate([
             profileImageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
             profileImageView.topAnchor.constraint(equalTo: topAnchor),
-            profileImageView.heightAnchor.constraint(equalToConstant: 40),
+            profileImageView.bottomAnchor.constraint(equalTo: bottomAnchor),
             profileImageView.widthAnchor.constraint(equalTo: profileImageView.heightAnchor),
             
             titleLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
             titleLabel.centerYAnchor.constraint(equalTo: profileImageView.centerYAnchor),
             titleLabel.leadingAnchor.constraint(equalTo: profileImageView.trailingAnchor, constant: 12)
         ])
+        
+        let profileImageViewHeightConstraint = profileImageView.heightAnchor.constraint(equalToConstant: 40)
+        profileImageViewHeightConstraint.priority = .init(999)
+        profileImageViewHeightConstraint.isActive = true
     }
 }

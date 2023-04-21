@@ -8,6 +8,12 @@ class LeadershipBoardViewController: UIViewController {
         return navbar
     }()
     
+    private lazy var segmentView: SegmentView = {
+        let segmentView = SegmentView()
+        segmentView.translatesAutoresizingMaskIntoConstraints = false
+        return segmentView
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,6 +27,7 @@ private extension LeadershipBoardViewController {
     func setupViews() {
         addBackgroundGradientLayer()
         addNavigationView()
+        addSegmentView()
     }
     
     func addNavigationView() {
@@ -30,6 +37,16 @@ private extension LeadershipBoardViewController {
             navigationbar.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             navigationbar.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             navigationbar.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+        ])
+    }
+    
+    func addSegmentView() {
+        view.addSubview(segmentView)
+        
+        NSLayoutConstraint.activate([
+            segmentView.topAnchor.constraint(equalTo: navigationbar.bottomAnchor, constant: 12),
+            segmentView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            segmentView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
         ])
     }
     

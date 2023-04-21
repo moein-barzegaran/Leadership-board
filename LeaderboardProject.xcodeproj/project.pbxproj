@@ -15,6 +15,7 @@
 		50D488B529EB7CEC00146C3D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50D488B429EB7CEC00146C3D /* Colors.xcassets */; };
 		50D488BB29EB7E2D00146C3D /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D488BA29EB7E2D00146C3D /* Color+Extensions.swift */; };
 		50D488BE29EB811200146C3D /* LeadershipBoardNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D488BD29EB811200146C3D /* LeadershipBoardNavBar.swift */; };
+		50D488C029ECB3F200146C3D /* SegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D488BF29ECB3F200146C3D /* SegmentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		50D488B429EB7CEC00146C3D /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		50D488BA29EB7E2D00146C3D /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		50D488BD29EB811200146C3D /* LeadershipBoardNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadershipBoardNavBar.swift; sourceTree = "<group>"; };
+		50D488BF29ECB3F200146C3D /* SegmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				50D488BD29EB811200146C3D /* LeadershipBoardNavBar.swift */,
+				50D488BF29ECB3F200146C3D /* SegmentView.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 				50D4889C29EB65E700146C3D /* AppDelegate.swift in Sources */,
 				50D4889E29EB65E700146C3D /* SceneDelegate.swift in Sources */,
 				50D488BE29EB811200146C3D /* LeadershipBoardNavBar.swift in Sources */,
+				50D488C029ECB3F200146C3D /* SegmentView.swift in Sources */,
 				50D488BB29EB7E2D00146C3D /* Color+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
