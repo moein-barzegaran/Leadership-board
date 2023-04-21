@@ -1,10 +1,18 @@
 import UIKit
 
+protocol SegmentViewProtocol: AnyObject {
+    func segmentValueChanged(_ index: Int)
+}
+
 class SegmentView: UIView {
+    
+    
+    // MARK: Private properties
+    
     private lazy var segmentControl: UISegmentedControl = {
-        let segmentControl = UISegmentedControl(items: ["Friends", "Your location", "Global"])
+        let segmentControl = UISegmentedControl(items: segmentTitles)
         segmentControl.translatesAutoresizingMaskIntoConstraints = false
-        segmentControl.selectedSegmentIndex = 0
+        segmentControl.selectedSegmentIndex = selectedIndex
         segmentControl.addTarget(self, action: #selector(segmentControlValueChanged(_:)), for: .valueChanged)
         segmentControl.selectedSegmentTintColor = .mainColor
         segmentControl.backgroundColor = .clear
@@ -25,11 +33,18 @@ class SegmentView: UIView {
         return segmentControl
     }()
     
-    private var selectedSegment: Int = 0
+    private let selectedIndex: Int
+    private let segmentTitles: [String]
+
+    // MARK: Public properties
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    weak var delegate: SegmentViewProtocol?
+    
+    init(segments: [String], selectedIndex: Int, delegate: SegmentViewProtocol? = nil) {
+        self.segmentTitles = segments
+        self.selectedIndex = selectedIndex
         
+        super.init(frame: .zero)
         setupViews()
     }
     
@@ -52,15 +67,6 @@ private extension SegmentView {
     }
     
     @objc func segmentControlValueChanged(_ sender: UISegmentedControl) {
-            switch sender.selectedSegmentIndex {
-            case 0:
-                print("Friends")
-            case 1:
-                print("Your location")
-            case 2:
-                print("Global")
-            default:
-                break
-            }
-        }
+        delegate?.segmentValueChanged(sender.selectedSegmentIndex)
+    }
 }

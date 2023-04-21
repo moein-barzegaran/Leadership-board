@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5085BC5229F302960024C850 /* YourLocationBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5085BC5129F302960024C850 /* YourLocationBoardViewController.swift */; };
+		5085BC5529F303070024C850 /* FriendsBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5085BC5329F302CE0024C850 /* FriendsBoardViewController.swift */; };
+		5085BC5629F303090024C850 /* GlobalBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5085BC5429F302D10024C850 /* GlobalBoardViewController.swift */; };
+		5085BC5829F304670024C850 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5085BC5729F304670024C850 /* UIViewController+Extensions.swift */; };
+		5085BC5A29F309E50024C850 /* LeadershipBoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5085BC5929F309E50024C850 /* LeadershipBoardViewModel.swift */; };
+		5085BC5E29F30DBA0024C850 /* LeadershipBoardComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5085BC5D29F30DBA0024C850 /* LeadershipBoardComposer.swift */; };
 		50D4889C29EB65E700146C3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D4889B29EB65E700146C3D /* AppDelegate.swift */; };
 		50D4889E29EB65E700146C3D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D4889D29EB65E700146C3D /* SceneDelegate.swift */; };
 		50D488A029EB65E700146C3D /* LeadershipBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D4889F29EB65E700146C3D /* LeadershipBoardViewController.swift */; };
@@ -19,6 +25,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5085BC5129F302960024C850 /* YourLocationBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourLocationBoardViewController.swift; sourceTree = "<group>"; };
+		5085BC5329F302CE0024C850 /* FriendsBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsBoardViewController.swift; sourceTree = "<group>"; };
+		5085BC5429F302D10024C850 /* GlobalBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalBoardViewController.swift; sourceTree = "<group>"; };
+		5085BC5729F304670024C850 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		5085BC5929F309E50024C850 /* LeadershipBoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadershipBoardViewModel.swift; sourceTree = "<group>"; };
+		5085BC5D29F30DBA0024C850 /* LeadershipBoardComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadershipBoardComposer.swift; sourceTree = "<group>"; };
 		50D4889829EB65E700146C3D /* LeaderboardProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeaderboardProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50D4889B29EB65E700146C3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50D4889D29EB65E700146C3D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +55,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5085BC4D29F302000024C850 /* FriendsBoard */ = {
+			isa = PBXGroup;
+			children = (
+				5085BC5329F302CE0024C850 /* FriendsBoardViewController.swift */,
+			);
+			path = FriendsBoard;
+			sourceTree = "<group>";
+		};
+		5085BC4E29F302140024C850 /* YourLocationBoard */ = {
+			isa = PBXGroup;
+			children = (
+				5085BC5129F302960024C850 /* YourLocationBoardViewController.swift */,
+			);
+			path = YourLocationBoard;
+			sourceTree = "<group>";
+		};
+		5085BC4F29F302250024C850 /* GlobalBoard */ = {
+			isa = PBXGroup;
+			children = (
+				5085BC5429F302D10024C850 /* GlobalBoardViewController.swift */,
+			);
+			path = GlobalBoard;
+			sourceTree = "<group>";
+		};
+		5085BC5029F302660024C850 /* Segments */ = {
+			isa = PBXGroup;
+			children = (
+				5085BC4F29F302250024C850 /* GlobalBoard */,
+				5085BC4D29F302000024C850 /* FriendsBoard */,
+				5085BC4E29F302140024C850 /* YourLocationBoard */,
+			);
+			path = Segments;
+			sourceTree = "<group>";
+		};
+		5085BC5B29F30D990024C850 /* Composer */ = {
+			isa = PBXGroup;
+			children = (
+				5085BC5D29F30DBA0024C850 /* LeadershipBoardComposer.swift */,
+			);
+			path = Composer;
+			sourceTree = "<group>";
+		};
+		5085BC5F29F30E300024C850 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				50D4889F29EB65E700146C3D /* LeadershipBoardViewController.swift */,
+				50D488BC29EB80FB00146C3D /* Subviews */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		5085BC6029F30E5B0024C850 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				5085BC5929F309E50024C850 /* LeadershipBoardViewModel.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
 		50D4888F29EB65E600146C3D = {
 			isa = PBXGroup;
 			children = (
@@ -101,8 +172,10 @@
 		50D488B229EB796D00146C3D /* LeadershipBoardScreen */ = {
 			isa = PBXGroup;
 			children = (
-				50D488BC29EB80FB00146C3D /* Subviews */,
-				50D4889F29EB65E700146C3D /* LeadershipBoardViewController.swift */,
+				5085BC5029F302660024C850 /* Segments */,
+				5085BC6029F30E5B0024C850 /* Presentation */,
+				5085BC5B29F30D990024C850 /* Composer */,
+				5085BC5F29F30E300024C850 /* UI */,
 			);
 			path = LeadershipBoardScreen;
 			sourceTree = "<group>";
@@ -127,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				50D488BA29EB7E2D00146C3D /* Color+Extensions.swift */,
+				5085BC5729F304670024C850 /* UIViewController+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -213,10 +287,16 @@
 			files = (
 				50D488A029EB65E700146C3D /* LeadershipBoardViewController.swift in Sources */,
 				50D4889C29EB65E700146C3D /* AppDelegate.swift in Sources */,
+				5085BC5529F303070024C850 /* FriendsBoardViewController.swift in Sources */,
 				50D4889E29EB65E700146C3D /* SceneDelegate.swift in Sources */,
+				5085BC5229F302960024C850 /* YourLocationBoardViewController.swift in Sources */,
+				5085BC5E29F30DBA0024C850 /* LeadershipBoardComposer.swift in Sources */,
 				50D488BE29EB811200146C3D /* LeadershipBoardNavBar.swift in Sources */,
 				50D488C029ECB3F200146C3D /* SegmentView.swift in Sources */,
 				50D488BB29EB7E2D00146C3D /* Color+Extensions.swift in Sources */,
+				5085BC5A29F309E50024C850 /* LeadershipBoardViewModel.swift in Sources */,
+				5085BC5829F304670024C850 /* UIViewController+Extensions.swift in Sources */,
+				5085BC5629F303090024C850 /* GlobalBoardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
