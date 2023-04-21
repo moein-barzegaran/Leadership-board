@@ -1,28 +1,17 @@
 import UIKit
 
 class SegmentView: UIView {
-    
-    private lazy var stackView: UIStackView = {
-        let stackView = UIStackView()
-        stackView.translatesAutoresizingMaskIntoConstraints = false
-        stackView.axis = .horizontal
-        stackView.spacing = .zero
-        stackView.alignment = .fill
-        stackView.distribution = .fillProportionally
-        return stackView
-    }()
-    
     private lazy var segmentControl: UISegmentedControl = {
         let segmentControl = UISegmentedControl(items: ["Screen 1", "Screen 2", "Screen 3"])
         segmentControl.translatesAutoresizingMaskIntoConstraints = false
         segmentControl.selectedSegmentIndex = 0
         segmentControl.addTarget(self, action: #selector(segmentControlValueChanged(_:)), for: .valueChanged)
         segmentControl.selectedSegmentTintColor = .mainColor
+        segmentControl.backgroundColor = .clear
         segmentControl.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.segmentSelected], for: .selected)
         segmentControl.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.segmentDeselected], for: .normal)
         return segmentControl
     }()
- 
     
     private var selectedSegment: Int = 0
     
@@ -48,10 +37,6 @@ private extension SegmentView {
             segmentControl.topAnchor.constraint(equalTo: topAnchor),
             segmentControl.bottomAnchor.constraint(equalTo: bottomAnchor)
         ])
-        
-        let heightConstraint = segmentControl.heightAnchor.constraint(equalToConstant: 45)
-        heightConstraint.priority = .init(999)
-        heightConstraint.isActive = true
     }
     
     @objc func segmentControlValueChanged(_ sender: UISegmentedControl) {

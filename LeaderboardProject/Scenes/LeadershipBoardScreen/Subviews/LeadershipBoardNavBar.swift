@@ -5,7 +5,6 @@ class LeadershipBoardNavBar: UIView {
     private lazy var profileImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.backgroundColor = .red
         return imageView
     }()
     
