@@ -2,14 +2,26 @@ import UIKit
 
 class SegmentView: UIView {
     private lazy var segmentControl: UISegmentedControl = {
-        let segmentControl = UISegmentedControl(items: ["Screen 1", "Screen 2", "Screen 3"])
+        let segmentControl = UISegmentedControl(items: ["Friends", "Your location", "Global"])
         segmentControl.translatesAutoresizingMaskIntoConstraints = false
         segmentControl.selectedSegmentIndex = 0
         segmentControl.addTarget(self, action: #selector(segmentControlValueChanged(_:)), for: .valueChanged)
         segmentControl.selectedSegmentTintColor = .mainColor
         segmentControl.backgroundColor = .clear
-        segmentControl.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.segmentSelected], for: .selected)
-        segmentControl.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.segmentDeselected], for: .normal)
+        segmentControl.setTitleTextAttributes(
+            [
+                NSAttributedString.Key.foregroundColor: UIColor.segmentSelected,
+                NSAttributedString.Key.font: UIFont.systemFont(ofSize: 16, weight: .bold),
+            ],
+            for: .selected
+        )
+        segmentControl.setTitleTextAttributes(
+            [
+                NSAttributedString.Key.foregroundColor: UIColor.segmentDeselected,
+                NSAttributedString.Key.font: UIFont.systemFont(ofSize: 14),
+            ],
+            for: .normal
+        )
         return segmentControl
     }()
     
@@ -42,11 +54,11 @@ private extension SegmentView {
     @objc func segmentControlValueChanged(_ sender: UISegmentedControl) {
             switch sender.selectedSegmentIndex {
             case 0:
-                print("Screen 1 selected")
+                print("Friends")
             case 1:
-                print("Screen 2 selected")
+                print("Your location")
             case 2:
-                print("Screen 3 selected")
+                print("Global")
             default:
                 break
             }
