@@ -14,6 +14,16 @@
 		5085BC5A29F309E50024C850 /* LeadershipBoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5085BC5929F309E50024C850 /* LeadershipBoardViewModel.swift */; };
 		5085BC5E29F30DBA0024C850 /* LeadershipBoardComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5085BC5D29F30DBA0024C850 /* LeadershipBoardComposer.swift */; };
 		5085BC7029F3113D0024C850 /* LeadershipBoardViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5085BC6F29F3113D0024C850 /* LeadershipBoardViewModelTests.swift */; };
+		5085BC7429F322260024C850 /* LeadershipBoardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5085BC7329F322260024C850 /* LeadershipBoardService.swift */; };
+		5085BC7929F3257D0024C850 /* LeadershipBoardEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5085BC7829F325770024C850 /* LeadershipBoardEndpoint.swift */; };
+		5085BC7E29F326080024C850 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5085BC7A29F326070024C850 /* HTTPMethod.swift */; };
+		5085BC7F29F326080024C850 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5085BC7B29F326070024C850 /* HTTPClient.swift */; };
+		5085BC8029F326080024C850 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5085BC7C29F326070024C850 /* Endpoint.swift */; };
+		5085BC8129F326080024C850 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5085BC7D29F326080024C850 /* RequestError.swift */; };
+		5085BC8429F4798F0024C850 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5085BC8329F4798F0024C850 /* User.swift */; };
+		5085BC8929F484310024C850 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5085BC8629F484300024C850 /* ParameterEncoding.swift */; };
+		5085BC8A29F484310024C850 /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5085BC8729F484300024C850 /* JSONParameterEncoder.swift */; };
+		5085BC8B29F484310024C850 /* URLParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5085BC8829F484310024C850 /* URLParameterEncoder.swift */; };
 		50D4889C29EB65E700146C3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D4889B29EB65E700146C3D /* AppDelegate.swift */; };
 		50D4889E29EB65E700146C3D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D4889D29EB65E700146C3D /* SceneDelegate.swift */; };
 		50D488A029EB65E700146C3D /* LeadershipBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D4889F29EB65E700146C3D /* LeadershipBoardViewController.swift */; };
@@ -45,6 +55,16 @@
 		5085BC6529F310EA0024C850 /* LeaderboardProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeaderboardProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5085BC6F29F3113D0024C850 /* LeadershipBoardViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadershipBoardViewModelTests.swift; sourceTree = "<group>"; };
 		5085BC7129F311F30024C850 /* LeaderboardProject.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = LeaderboardProject.xctestplan; sourceTree = "<group>"; };
+		5085BC7329F322260024C850 /* LeadershipBoardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadershipBoardService.swift; sourceTree = "<group>"; };
+		5085BC7829F325770024C850 /* LeadershipBoardEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadershipBoardEndpoint.swift; sourceTree = "<group>"; };
+		5085BC7A29F326070024C850 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		5085BC7B29F326070024C850 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		5085BC7C29F326070024C850 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		5085BC7D29F326080024C850 /* RequestError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
+		5085BC8329F4798F0024C850 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5085BC8629F484300024C850 /* ParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		5085BC8729F484300024C850 /* JSONParameterEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoder.swift; sourceTree = "<group>"; };
+		5085BC8829F484310024C850 /* URLParameterEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLParameterEncoder.swift; sourceTree = "<group>"; };
 		50D4889829EB65E700146C3D /* LeaderboardProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeaderboardProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50D4889B29EB65E700146C3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50D4889D29EB65E700146C3D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -151,6 +171,62 @@
 			path = LeadershipBoardScene;
 			sourceTree = "<group>";
 		};
+		5085BC7229F321FB0024C850 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				5085BC8529F484210024C850 /* Encoding */,
+				5085BC7529F325260024C850 /* Base */,
+				5085BC7629F3252D0024C850 /* Endpoints */,
+				5085BC7729F3253C0024C850 /* Services */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		5085BC7529F325260024C850 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				5085BC7C29F326070024C850 /* Endpoint.swift */,
+				5085BC7B29F326070024C850 /* HTTPClient.swift */,
+				5085BC7A29F326070024C850 /* HTTPMethod.swift */,
+				5085BC7D29F326080024C850 /* RequestError.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		5085BC7629F3252D0024C850 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				5085BC7829F325770024C850 /* LeadershipBoardEndpoint.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		5085BC7729F3253C0024C850 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5085BC7329F322260024C850 /* LeadershipBoardService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5085BC8229F4796B0024C850 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5085BC8329F4798F0024C850 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5085BC8529F484210024C850 /* Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				5085BC8729F484300024C850 /* JSONParameterEncoder.swift */,
+				5085BC8629F484300024C850 /* ParameterEncoding.swift */,
+				5085BC8829F484310024C850 /* URLParameterEncoder.swift */,
+			);
+			path = Encoding;
+			sourceTree = "<group>";
+		};
 		50D4888F29EB65E600146C3D = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +251,8 @@
 			children = (
 				50D488AF29EB792300146C3D /* Application */,
 				50D488B129EB794500146C3D /* Scenes */,
+				5085BC7229F321FB0024C850 /* Networking */,
+				5085BC8229F4796B0024C850 /* Models */,
 				50D488B829EB7E0600146C3D /* Foundation */,
 				50D488B029EB793500146C3D /* Resources */,
 			);
@@ -365,16 +443,26 @@
 			files = (
 				50D488A029EB65E700146C3D /* LeadershipBoardViewController.swift in Sources */,
 				50D4889C29EB65E700146C3D /* AppDelegate.swift in Sources */,
+				5085BC8929F484310024C850 /* ParameterEncoding.swift in Sources */,
 				5085BC5529F303070024C850 /* FriendsBoardViewController.swift in Sources */,
 				50D4889E29EB65E700146C3D /* SceneDelegate.swift in Sources */,
+				5085BC8A29F484310024C850 /* JSONParameterEncoder.swift in Sources */,
 				5085BC5229F302960024C850 /* YourLocationBoardViewController.swift in Sources */,
 				5085BC5E29F30DBA0024C850 /* LeadershipBoardComposer.swift in Sources */,
+				5085BC7929F3257D0024C850 /* LeadershipBoardEndpoint.swift in Sources */,
 				50D488BE29EB811200146C3D /* LeadershipBoardNavBar.swift in Sources */,
+				5085BC8129F326080024C850 /* RequestError.swift in Sources */,
+				5085BC7E29F326080024C850 /* HTTPMethod.swift in Sources */,
+				5085BC8B29F484310024C850 /* URLParameterEncoder.swift in Sources */,
 				50D488C029ECB3F200146C3D /* SegmentView.swift in Sources */,
+				5085BC7F29F326080024C850 /* HTTPClient.swift in Sources */,
 				50D488BB29EB7E2D00146C3D /* Color+Extensions.swift in Sources */,
 				5085BC5A29F309E50024C850 /* LeadershipBoardViewModel.swift in Sources */,
 				5085BC5829F304670024C850 /* UIViewController+Extensions.swift in Sources */,
+				5085BC7429F322260024C850 /* LeadershipBoardService.swift in Sources */,
+				5085BC8029F326080024C850 /* Endpoint.swift in Sources */,
 				5085BC5629F303090024C850 /* GlobalBoardViewController.swift in Sources */,
+				5085BC8429F4798F0024C850 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
