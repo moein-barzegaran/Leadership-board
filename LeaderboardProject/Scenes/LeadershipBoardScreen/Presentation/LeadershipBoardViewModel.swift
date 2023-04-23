@@ -15,7 +15,7 @@ class LeadershipBoardViewModel {
             case .friends:
                 return FriendsBoardViewController()
             case .yourLocation:
-                return YourLocationBoardViewController()
+                return YourLocationBoardComposer.makeInstance()
             case .global:
                 return GlobalBoardViewController()
             }
