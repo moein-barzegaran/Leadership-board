@@ -8,8 +8,10 @@ class YourLocationBoardViewController: UIViewController {
         tableView.tableFooterView = UIView()
         tableView.rowHeight = UITableView.automaticDimension
         tableView.backgroundColor = .clear
+        tableView.separatorStyle = .none
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.register(UserCell.self, forCellReuseIdentifier: "UserCell")
         return tableView
     }()
     
@@ -65,7 +67,8 @@ extension YourLocationBoardViewController: UITableViewDataSource, UITableViewDel
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let tableViewCell = UITableViewCell()
-        return tableViewCell
+        let userCell = tableView.dequeueReusableCell(withIdentifier: "UserCell", for: indexPath) as! UserCell
+        userCell.configure(with: viewModel.getItem(at: indexPath.row))
+        return userCell
     }
 }
