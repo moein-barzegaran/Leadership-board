@@ -24,6 +24,7 @@
 		5085BC8929F484310024C850 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5085BC8629F484300024C850 /* ParameterEncoding.swift */; };
 		5085BC8A29F484310024C850 /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5085BC8729F484300024C850 /* JSONParameterEncoder.swift */; };
 		5085BC8B29F484310024C850 /* URLParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5085BC8829F484310024C850 /* URLParameterEncoder.swift */; };
+		5085BC8E29F571560024C850 /* HTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5085BC8D29F571560024C850 /* HTTPClientTests.swift */; };
 		50D4889C29EB65E700146C3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D4889B29EB65E700146C3D /* AppDelegate.swift */; };
 		50D4889E29EB65E700146C3D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D4889D29EB65E700146C3D /* SceneDelegate.swift */; };
 		50D488A029EB65E700146C3D /* LeadershipBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D4889F29EB65E700146C3D /* LeadershipBoardViewController.swift */; };
@@ -65,6 +66,7 @@
 		5085BC8629F484300024C850 /* ParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
 		5085BC8729F484300024C850 /* JSONParameterEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoder.swift; sourceTree = "<group>"; };
 		5085BC8829F484310024C850 /* URLParameterEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLParameterEncoder.swift; sourceTree = "<group>"; };
+		5085BC8D29F571560024C850 /* HTTPClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientTests.swift; sourceTree = "<group>"; };
 		50D4889829EB65E700146C3D /* LeaderboardProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeaderboardProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50D4889B29EB65E700146C3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50D4889D29EB65E700146C3D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 		5085BC6629F310EA0024C850 /* LeaderboardProjectTests */ = {
 			isa = PBXGroup;
 			children = (
+				5085BC8C29F5713F0024C850 /* NetworkLayerTests */,
 				5085BC6E29F311090024C850 /* LeadershipBoardScene */,
 			);
 			path = LeaderboardProjectTests;
@@ -225,6 +228,14 @@
 				5085BC8829F484310024C850 /* URLParameterEncoder.swift */,
 			);
 			path = Encoding;
+			sourceTree = "<group>";
+		};
+		5085BC8C29F5713F0024C850 /* NetworkLayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				5085BC8D29F571560024C850 /* HTTPClientTests.swift */,
+			);
+			path = NetworkLayerTests;
 			sourceTree = "<group>";
 		};
 		50D4888F29EB65E600146C3D = {
@@ -433,6 +444,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5085BC8E29F571560024C850 /* HTTPClientTests.swift in Sources */,
 				5085BC7029F3113D0024C850 /* LeadershipBoardViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

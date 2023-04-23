@@ -4,11 +4,11 @@ protocol HTTPClient {
     func sendRequest<T: Decodable>(endpoint: Endpoint, responseModel: T.Type) async -> Result<T, RequestError>
 }
 
-extension HTTPClient {
+class MainHTTPClient: HTTPClient {
     func sendRequest<T: Decodable>(
         endpoint: Endpoint,
         responseModel: T.Type
-    ) async -> Result<T, RequestError> { 
+    ) async -> Result<T, RequestError> {
         do {
             let request = try self.buildRequest(from: endpoint)
             do {

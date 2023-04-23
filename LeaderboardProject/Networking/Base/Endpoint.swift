@@ -16,8 +16,7 @@ enum HTTPTask {
 protocol Endpoint {
     var baseURL: URL { get }
     var path: String { get }
-    var method: RequestMethod { get }
-    var header: [String: String]? { get }
+    var method: HTTPMethod { get }
     var task: HTTPTask { get }
 }
 

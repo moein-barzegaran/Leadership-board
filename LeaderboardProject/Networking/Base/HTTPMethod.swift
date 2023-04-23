@@ -1,4 +1,4 @@
-enum RequestMethod: String {
+enum HTTPMethod: String {
     case delete = "DELETE"
     case get = "GET"
     case patch = "PATCH"

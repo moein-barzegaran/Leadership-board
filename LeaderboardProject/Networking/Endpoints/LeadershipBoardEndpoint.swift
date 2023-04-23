@@ -25,6 +25,6 @@ extension LeadershipBoardEndpoint: Endpoint {
             return "/users"
         }
     }
-    var method: RequestMethod { .get }
+    var method: HTTPMethod { .get }
     var header: [String: String]? { [ "Content-Type": "application/json;charset=utf-8" ] }
 }
